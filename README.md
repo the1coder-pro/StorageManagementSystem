@@ -47,7 +47,6 @@ The application operates via a primary window shell (`JFrame`) housing a role-go
 ### Prerequisites
 * **Java Development Kit (JDK):** Version 8 or higher
 * **Database:** MySQL Server 8.0+
-* **Build Tool:** Maven or Gradle (Optional)
 
 ### Database Setup
 1. Create a MySQL database (e.g., `sms_db`).
