@@ -14,6 +14,7 @@ public class StorageManagementSystem {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        new Login();
         // TODO code application logic here
     }
     
