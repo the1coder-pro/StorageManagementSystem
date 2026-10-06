@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Arrays;
 
 public class Login extends JFrame implements ActionListener {
     JLabel Welcome_label = new JLabel("Authentication");
@@ -57,12 +58,14 @@ public class Login extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btnLogin) {
+
             String username = txtUsername.getText();
-            String password = txtPassword.getText();
+            String password = new String(txtPassword.getPassword());
+
             if (username.equals("ali") && password.equals("yousef")) {
                 JOptionPane.showMessageDialog(null, "Welcome to Storage Management System "+username);
             }
-            else {JOptionPane.showMessageDialog(null,"Wrong! Username or Password is not correct.");}
+            else {JOptionPane.showMessageDialog(null,"Wrong! Username or Password is not correct." + password);}
         }
         if (e.getSource() == btnClear) {
             txtUsername.setText("");
