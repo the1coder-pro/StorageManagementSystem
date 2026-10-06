@@ -59,7 +59,7 @@ public class Login extends JFrame implements ActionListener {
         if (e.getSource() == btnLogin) {
             String username = txtUsername.getText();
             String password = txtPassword.getText();
-            if (username.equals("ali") || password.equals("yousef")) {
+            if (username.equals("ali") && password.equals("yousef")) {
                 JOptionPane.showMessageDialog(null, "Welcome to Storage Management System "+username);
             }
             else {JOptionPane.showMessageDialog(null,"Wrong! Username or Password is not correct.");}
