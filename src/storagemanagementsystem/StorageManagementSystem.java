@@ -16,6 +16,7 @@ public class StorageManagementSystem {
     public static void main(String[] args) {
         new Login();
         // TODO code application logic here
+        new InventoryPanel();
     }
     
 }
